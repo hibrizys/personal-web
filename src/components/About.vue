@@ -17,9 +17,9 @@
             </div>
             <div class="text">
               <p>
-                My name is <span>Hibrizy Sulistiyo.</span> A passionate Information Technology
-                graduate with a keen interest in Frontend Development, Backend Development, and
-                DevOps.
+                Im <span>Izy</span>. A <span>freshgraduate</span> Information Technology at <span>Telkom University</span> 
+                with experienced in <span>software development</span> and interested in <span>Software Architect</span>, 
+                <span>Web Development</span> and <span>Cloud Infrastructure</span>. 
               </p>
             </div>
             <div class="hibrizy_tm_button" id="aboutPopup">

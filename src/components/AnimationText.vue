@@ -14,7 +14,7 @@
     name: `AnimationText`,
     data() {
       return {
-        skills: ['Technology', 'Developer', 'DevOps'],
+        skills: ['Software Architect', 'Web Development', 'Cloud Infrastructure'],
         text: 0
       }
     },

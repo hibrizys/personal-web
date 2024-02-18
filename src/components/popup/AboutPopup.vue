@@ -47,6 +47,14 @@
                     </li>
                     <li>
                       <div class="list_inner">
+                        <i class="icon-phone"></i>
+                        <span
+                          ><a href="https://wa.me/6282187431330">{{ aboutData.phn }}</a></span
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list_inner">
                         <i class="icon-mail-1"></i>
                         <span
                           ><a :href="`mailto:${aboutData.email}`">{{ aboutData.email }}</a></span
@@ -84,9 +92,17 @@
                   </div>
                   <div class="text">
                     <p>
-                      Hello everybody! My name is
-                      <span>Hibrizy Sulistiyo.</span> A passionate Information Technology graduate
-                      with a keen interest in Frontend Development, Backend Development, and DevOps.
+                      Im <span>Izy</span>. A <span>freshgraduate</span> Information Technology at <span>Telkom University</span> 
+                      with experienced in <span>software development</span> and interested in <span>Software Architect</span>, 
+                      <span>Web Development</span> and <span>Cloud Infrastructure</span>.<br><br>
+                      
+                      With a diverse set of hard skills encompassing VueJS, Golang, C++, CodeIgniter, MySQL/PostgreSQL, Java, 
+                      Flutter, Linux OS, PaaS (GCP, AWS, Nutanix), Docker, Kubernetes, Grafana, Sonarqube, 
+                      Izy is well-equipped to take on various technical challenges.<br><br>
+
+                      Beyond technical expertise, Izy's soft skills, including Leadership, Analytical Thinking, 
+                      Adaptability, Time Management, Creativity, Teamwork, and Problem Solving, 
+                      empower them to thrive in collaborative and dynamic environments.
                     </p>
                   </div>
                 </div>
@@ -341,6 +357,7 @@
           lastName: 'Sulistiyo',
           bithday: '28.03.2002',
           address: 'Bandung, Indonesia',
+          phn: '+62 821 8743 1330',
           linkedin: 'hibrizys',
           email: 'hibrizys@gmail.com',
           serviceLists: [
