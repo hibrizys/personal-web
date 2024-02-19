@@ -75,7 +75,7 @@
                 </div>
                 <div class="hibrizy_tm_button full">
                   <a
-                    href="https://drive.usercontent.google.com/download?id=1LUVfi0ifPNWQ7N_Q0nAKPmuUMtQ1LNgm&export=download&authuser=2&confirm=t&uuid=c401a7b5-3ce2-4996-b19f-6610d6b60989&at=AC2mKKQXg3QOzco1Af5uKcB1e4iI:1690642282336"
+                    href="https://drive.usercontent.google.com/download?id=1xvyd-ebgMPASWEAtHmqRWUP43WNh2LXi&export=download&authuser=0&confirm=t&uuid=0dafd2da-da9e-4ea9-ab56-d47e4677a90f&at=APZUnTU_4h2C090AIBqnEa2DMy8Q:1708355993181"
                     download
                     >Download CV</a
                   >
@@ -92,30 +92,22 @@
                   </div>
                   <div class="text">
                     <p>
-                      Im <span>Izy</span>. A <span>freshgraduate</span> Information Technology at <span>Telkom University</span> 
-                      with experienced in <span>software development</span> and interested in <span>Software Architect</span>, 
-                      <span>Web Development</span> and <span>Cloud Infrastructure</span>.<br><br>
-                      
-                      With a diverse set of hard skills encompassing VueJS, Golang, C++, CodeIgniter, MySQL/PostgreSQL, Java, 
-                      Flutter, Linux OS, PaaS (GCP, AWS, Nutanix), Docker, Kubernetes, Grafana, Sonarqube, 
-                      Izy is well-equipped to take on various technical challenges.<br><br>
-
-                      Beyond technical expertise, Izy's soft skills, including Leadership, Analytical Thinking, 
-                      Adaptability, Time Management, Creativity, Teamwork, and Problem Solving, 
-                      empower them to thrive in collaborative and dynamic environments.
+                      Im <span>Izy</span>. A <span>Fresh Graduate</span> bachelor of <span>Information Technology</span> at <span>Telkom University</span> 
+                      with experienced in <span>Software Development</span> and interested in <span>Software Architect</span>, 
+                      <span>Web Development</span> and <span>Cloud Infrastructure</span>.
                     </p>
                   </div>
                 </div>
                 <div class="service">
                   <div class="about_title">
                     <h3>
-                      <span>Quality <span class="coloring">Services</span></span>
+                      <span>Soft <span class="coloring">Skills</span></span>
                     </h3>
                   </div>
                   <div class="list">
                     <ul>
-                      <li v-for="(service, i) in aboutData.serviceLists" :key="i">
-                        <i class="icon-right-dir"></i>{{ service }}
+                      <li v-for="(soft, i) in aboutData.softLists" :key="i">
+                        <i class="icon-right-dir"></i>{{ soft }}
                       </li>
                     </ul>
                   </div>
@@ -123,22 +115,22 @@
                 <div class="prog_skill">
                   <div class="about_title">
                     <h3>
-                      <span>Programming <span class="coloring">Skills</span></span>
+                      <span>Technical <span class="coloring">Skills</span></span>
                     </h3>
                   </div>
                   <div class="oki_progress">
                     <div
                       class="progress_inner"
-                      v-for="(skill, i) in aboutData.skills.programming"
+                      v-for="(skill, i) in aboutData.skills.technical"
                       :key="i"
                     >
                       <span
                         ><span class="label">{{ skill.name }}</span
-                        ><span class="number">{{ skill.value }}%</span></span
+                        ><span class="number">{{ skill.value }}</span></span
                       >
                       <div class="background">
                         <div class="bar open">
-                          <div class="bar_in" :style="{ width: `${skill.value}%` }"></div>
+                          <div class="bar_in" :style="{ width: `100%` }"></div>
                         </div>
                       </div>
                     </div>
@@ -154,23 +146,23 @@
                     <ul>
                       <li>
                         <div class="list_inner">
-                          <div class="myCircle" data-value=".95"></div>
+                          <div class="myCircle" data-value="1"></div>
   
-                          <div class="title"><span>Indonesia</span></div>
+                          <div class="title"><span>Indonesia (Native)</span></div>
                         </div>
                       </li>
                       <li>
                         <div class="list_inner">
-                          <div class="myCircle" data-value="0.8"></div>
+                          <div class="myCircle" data-value="0.63"></div>
   
-                          <div class="title"><span>English</span></div>
+                          <div class="title"><span>English (Upper Intermediate)</span></div>
                         </div>
                       </li>
                       <li>
                         <div class="list_inner">
-                          <div class="myCircle" data-value="0.9"></div>
+                          <div class="myCircle" data-value="1"></div>
   
-                          <div class="title"><span>Manado</span></div>
+                          <div class="title"><span>Manado (Native)</span></div>
                         </div>
                       </li>
                     </ul>
@@ -220,114 +212,6 @@
                     </ul>
                   </div>
                 </div>
-                <div class="partners">
-                  <div class="about_title">
-                    <h3>
-                      <span>My <span class="coloring">Partners</span></span>
-                    </h3>
-                  </div>
-                  <div class="list">
-                    <ul>
-                      <!-- Add the 'key' attribute to the 'li' element to resolve the first error -->
-                      <li v-for="(partner, index) in aboutData.partnersLogos" :key="index">
-                        <div class="list_inner">
-                          <img :src="partner" alt="" />
-                          <a class="cavani_tm_full_link" href="#"></a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="testimonial">
-                  <div class="about_title">
-                    <h3>
-                      <span>Clients <span class="coloring">Feedback</span></span>
-                    </h3>
-                  </div>
-                  <div class="list">
-                    <swiper
-                      :loop="true"
-                      :slidesPerView="1"
-                      :spaceBetween="10"
-                      :loopAdditionalSlides="1"
-                      :autoplay="{
-                        delay: 6000
-                      }"
-                      :modules="modules"
-                      class="owl-carousel"
-                    >
-                      <swiper-slide>
-                        <div class="list_inner">
-                          <div class="text">
-                            <i class="icon-quote-left"></i>
-                            <p>
-                              Beautiful minimalist design and great, fast response with support.
-                              Highly recommend. Thanks Marketify!
-                            </p>
-                          </div>
-                          <div class="details">
-                            <div class="image">
-                              <div
-                                class="main"
-                                data-img-url="https://github.com/hibrizys/Hibrizy-Web/blob/main/src/assets/img/testimonials/1.jpg?raw=true"
-                              ></div>
-                            </div>
-                            <div class="info">
-                              <h3>Alexander Walker</h3>
-                              <span>Graphic Designer</span>
-                            </div>
-                          </div>
-                        </div>
-                      </swiper-slide>
-                      <swiper-slide>
-                        <div class="list_inner">
-                          <div class="text">
-                            <i class="icon-quote-left"></i>
-                            <p>
-                              These people really know what they are doing! Great customer support
-                              availability and supperb kindness.
-                            </p>
-                          </div>
-                          <div class="details">
-                            <div class="image">
-                              <div
-                                class="main"
-                                data-img-url="https://github.com/hibrizys/Hibrizy-Web/blob/main/src/assets/img/testimonials/2.jpg?raw=true"
-                              ></div>
-                            </div>
-                            <div class="info">
-                              <h3>Armin Van Buuren</h3>
-                              <span>Content Manager</span>
-                            </div>
-                          </div>
-                        </div>
-                      </swiper-slide>
-                      <swiper-slide>
-                        <div class="list_inner">
-                          <div class="text">
-                            <i class="icon-quote-left"></i>
-                            <p>
-                              I had a little problem and the support was just awesome to quickly solve
-                              the situation. And keep going on.
-                            </p>
-                          </div>
-                          <div class="details">
-                            <div class="image">
-                              <div
-                                class="main"
-                                data-img-url="https://github.com/hibrizys/Hibrizy-Web/blob/main/src/assets/img/testimonials/3.jpg?raw=true"
-                              ></div>
-                            </div>
-                            <div class="info">
-                              <h3>Baraka Clinton</h3>
-                              <span>English Teacher</span>
-                            </div>
-                          </div>
-                        </div>
-                      </swiper-slide>
-                    </swiper>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -339,13 +223,11 @@
   <script>
   import { Navigation, Pagination } from 'swiper'
   
-  import { Swiper, SwiperSlide } from 'swiper/vue'
   import AnimationText from '../AnimationText.vue'
   export default {
     name: `AboutPopup`,
+    
     components: {
-      Swiper,
-      SwiperSlide,
       AnimationText
     },
     data() {
@@ -355,70 +237,105 @@
         aboutData: {
           firstName: 'Hibrizy',
           lastName: 'Sulistiyo',
-          bithday: '28.03.2002',
+          bithday: '21 Years Old',
           address: 'Bandung, Indonesia',
           phn: '+62 821 8743 1330',
           linkedin: 'hibrizys',
           email: 'hibrizys@gmail.com',
-          serviceLists: [
-            'Website Development',
-            'Digital Experience',
-            'Content Marketing',
-            'Social Media Design',
-            'Shared Web Hosting'
+          softLists: [
+            'Leadership',
+            'Hardwork',
+            'Time Management',
+            'Creativity',
+            'Problem Solving',
+            'Teamwork',
+            'Adaptability',
+            'Analytical Thinking'
           ],
           skills: {
-            programming: [
-              { name: 'HTML', value: '95' },
-              { name: 'CSS', value: '80' },
-              { name: 'Javascript', value: '70' },
-              { name: 'VueJs', value: '75' }
+            technical: [
+              { name: 'Git', value: '' },
+              { name: 'HTML', value: '' },
+              { name: 'CSS', value: '' },
+              { name: 'Javascript', value: '' },
+              { name: 'Golang', value: '' },
+              { name: 'C++', value: '' },
+              { name: 'PHP (Codeigniter)', value: '' },
+              { name: 'Ubuntu', value: '' },
+              { name: 'CentOS', value: '' },
+              { name: 'Drawio', value: '' },
+              { name: 'VueJs', value: '' },
+              { name: 'Docker', value: '' },
+              { name: 'Kubernetes', value: '' },
+              { name: 'Google Cloud Platform', value: '' },
+              { name: 'AWS Platform', value: '' },
+              { name: 'Nutanix Platform', value: '' },
+              { name: 'ExpressJs', value: '' },
+              { name: 'PostMan', value: '' },
+              { name: 'MySQL/PostgreSQL', value: '' },
+              { name: 'Grafana', value: '' },
+              { name: 'Prometheus', value: '' },
+              { name: 'SonarQube', value: '' },
+              { name: 'Nexus OSS', value: '' },
+              { name: 'Microsoft Word', value: '' },
+              { name: 'Microsoft Excel', value: '' },
+              { name: 'Microsoft Powerpoint', value: '' },
+              { name: 'Canva', value: '' }
             ],
             language: [
-              { name: 'Indonesia', value: '95' },
-              { name: 'English', value: '80' },
-              { name: 'Manado', value: '90' }
+              { name: 'Indonesia', value: '100' },
+              { name: 'English', value: '63' },
+              { name: 'Manado', value: '100' }
             ]
           },
           education: [
             {
-              year: '2014 - 2016',
-              unv: 'Oxford Univercity',
-              degree: 'Master Degree'
-            },
-            {
-              year: '2010 - 2014',
-              unv: 'Texas Univercity',
-              degree: 'Bachelor Degree'
-            },
-            {
-              year: '2008 - 2010',
-              unv: 'Simone College',
-              degree: 'Associate Degree'
+              year: 'Aug 2020 - Mar 2024',
+              unv: 'Telkom University',
+              degree: 'Bachelor of Information Technology'
             }
           ],
           working: [
             {
-              year: '2018 - running',
-              company: 'Envato Elements',
-              deg: 'Exclusive Author'
+              year: 'Sep 2023 - Jan 2024',
+              company: 'PT. Tabel Data Informatika',
+              deg: 'Platform Engineering'
             },
             {
-              year: '2015 - 2018',
-              company: 'Avo Corporation',
-              deg: 'Content Manager'
+              year: 'Jul 2023 - Aug 2023',
+              company: 'Telkom Indonesia',
+              deg: 'Developer Intern'
             },
             {
-              year: '2012 - 2015',
-              company: 'FC Barcelona',
-              deg: 'Football Player'
+              year: 'Mar 2023 - Apr 2023',
+              company: 'Digital Talent Scholarship',
+              deg: 'Cloud Architect'
+            },            
+            {
+              year: 'Sep 2022 - Jan 2023',
+              company: 'Telkom University',
+              deg: 'Assistant Practicum ( Data Structure )'
+            },            
+            {
+              year: 'Dec 2022',
+              company: 'Telkom University',
+              deg: 'Assistant Speaker'
+            },            
+            {
+              year: 'Sep 2022',
+              company: 'Telkom University',
+              deg: 'Orientation Committee for New Students in the Department of Information Technology'
+            },            
+            {
+              year: 'Aug 2022 - Sep 2022',
+              company: 'MySkill',
+              deg: 'Frontend Website Development'
+            },            
+            {
+              year: 'Mar 2022 - Jul 2022',
+              company: 'Telkom University',
+              deg: 'Assistant Lecturer ( Programming Algorithm )'
             }
-          ],
-          partnersLogos: [
-            'src/assets/img/partners/1.png',
-            'src/assets/img/partners/2.png',
-            'src/assets/img/partners/3.png',
-            'src/assets/img/partners/4.png'
           ]
         }
       }

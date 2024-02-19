@@ -21,16 +21,10 @@
                   </div>
                 </li>
                 <li>
-                  <div class="list_inner">
-                    <i class="icon-linkedin-1"></i>
-                    <span><a href="https://www.linkedin.com/in/hibrizys/">hibrizys</a></span>
-                  </div>
-                </li>
-                <li>
-                  <div class="list_inner">
-                    <i class="icon-github-1"></i>
-                    <span><a href="https://github.com/hibrizys">hibrizys</a></span>
-                  </div>
+                <div class="list_inner">
+                  <i class="icon-phone"></i>
+                  <span><a href="https://wa.me/6282187431330">+62 821 8743 1330</a></span>
+                </div>
                 </li>
               </ul>
             </div>
@@ -38,14 +32,8 @@
               <ul>
                 <li>
                   <div class="list_inner">
-                    <i class="icon-location"></i>
-                    <span><a href="#" class="href_location">Bandung, West Java, Indonesia</a></span>
-                  </div>
-                </li>
-                <li>
-                  <div class="list_inner">
-                    <i class="icon-mail-1"></i>
-                    <span><a href="mailto:hibrizys@gmail.com">hibrizys@gmail.com</a></span>
+                    <i class="icon-instagram-1"></i>
+                    <span><a href="https://www.instagram.com/izyslstyo/">izyslstyo</a></span>
                   </div>
                 </li>
                 <li>

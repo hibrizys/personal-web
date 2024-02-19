@@ -132,7 +132,7 @@
         newsData: [
           {
             title: 'Building brands through customer service',
-            img: 'src/assets/img/news/1.jpg',
+            img: require('@/assets/img/news/1.jpg'),
             tag: 'Branding',
             des: [
               'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',
@@ -142,7 +142,7 @@
           },
           {
             title: 'Unstoppable Jamstack and Gatsby opportunity',
-            img: 'src/assets/img/news/2.jpg',
+            img: require('@/assets/img/news/2.jpg'),
             tag: 'Design',
             des: [
               'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',
@@ -152,7 +152,7 @@
           },
           {
             title: 'Electron framework adds encryption API',
-            img: 'src/assets/img/news/3.jpg',
+            img: require('@/assets/img/news/3.jpg'),
             tag: 'Media',
             des: [
               'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',
@@ -162,7 +162,7 @@
           },
           {
             title: 'Sentry for JavaScript monitors release health',
-            img: 'src/assets/img/news/4.jpg',
+            img: require('@/assets/img/news/4.jpg'),
             tag: 'Technology',
             des: [
               'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',
@@ -172,7 +172,7 @@
           },
           {
             title: 'Five reasons to begin a Packt subscription',
-            img: 'src/assets/img/news/5.jpg',
+            img: require('@/assets/img/news/5.jpg'),
             tag: 'Lifestyle',
             des: [
               'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',
@@ -182,7 +182,7 @@
           },
           {
             title: 'Why developers are so divided over WordPress',
-            img: 'src/assets/img/news/6.jpg',
+            img: require('@/assets/img/news/6.jpg'),
             tag: 'Modern',
             des: [
               'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',

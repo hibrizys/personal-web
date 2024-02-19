@@ -17,8 +17,8 @@
             </div>
             <div class="text">
               <p>
-                Im <span>Izy</span>. A <span>freshgraduate</span> Information Technology at <span>Telkom University</span> 
-                with experienced in <span>software development</span> and interested in <span>Software Architect</span>, 
+                Im <span>Izy</span>. A <span>Fresh Graduate</span> bachelor of <span>Information Technology</span> at <span>Telkom University</span> 
+                with experienced in <span>Software Development</span> and interested in <span>Software Architect</span>, 
                 <span>Web Development</span> and <span>Cloud Infrastructure</span>. 
               </p>
             </div>
