@@ -6,12 +6,12 @@
       <li :class="navFuntions.activeNavCls('about')">
         <a href="#about" @click="navFuntions.activeSection('about')">About</a>
       </li>
-      <li :class="navFuntions.activeNavCls('portfolio')">
+      <!-- <li :class="navFuntions.activeNavCls('portfolio')">
         <a href="#portfolio" @click="navFuntions.activeSection('portfolio')">Portfolio</a>
       </li>
       <li :class="navFuntions.activeNavCls('news')">
         <a href="#news" @click="navFuntions.activeSection('news')">News</a>
-      </li>
+      </li> -->
       <li :class="navFuntions.activeNavCls('contact')">
         <a href="#contact" @click="navFuntions.activeSection('contact')">Contact</a>
       </li>
