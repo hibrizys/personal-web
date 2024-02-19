@@ -292,8 +292,13 @@
             {
               year: 'Aug 2020 - Mar 2024',
               unv: 'Telkom University',
-              degree: 'Bachelor of Information Technology'
-            }
+              degree: 'Bachelor of Information Technology (3.87/4.00)'
+            },            
+            {
+              year: 'Feb 2023 - Jul 2023',
+              unv: 'Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka',
+              degree: 'Specializing in Cloud Computing (91.80/100.00)'
+            },
           ],
           working: [
             {
