@@ -25,11 +25,11 @@
         <!-- /ABOUT -->
   
         <!-- PORTFOLIO -->
-        <Portofolio />
+        <!-- <Portofolio /> -->
         <!-- /PORTFOLIO -->
   
         <!-- NEWS -->
-        <News />
+        <!-- <News /> -->
         <!-- /NEWS -->
   
         <!-- CONTACT -->
