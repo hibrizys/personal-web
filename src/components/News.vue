@@ -36,8 +36,8 @@
               <swiper-slide class="swiper-slide" v-for="(data, i) in newsData" :key="i">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="https://github.com/hibrizys/Hibrizy-Web/blob/main/src/assets/img/thumbs/4-3.jpg?raw=true" alt="" />
-                    <div class="main" :data-img-url="data.img"></div>
+                    <img :src="require('@/assets/img/thumbs/4-3.jpg')" alt="" />
+                    <div class="main" :data-img-url="data.imgT"></div>
                     <a class="hibrizy_tm_full_link news_popup" href="#"></a>
                   </div>
                   <div class="details">
@@ -53,20 +53,21 @@
                   <div class="hibrizy_tm_hidden_content">
                     <div class="news_popup_details">
                       <div class="top_image">
-                        <img src="https://github.com/hibrizys/Hibrizy-Web/blob/main/src/assets/img/thumbs/4-2.jpg?raw=true" alt="" />
+                        <img :src="require('@/assets/img/thumbs/4-2.jpg')" alt="" />
                         <div class="main" :data-img-url="data.img"></div>
                       </div>
                       <div class="news_main_title">
                         <h3>{{ data.title }}</h3>
-                        <span
-                          ><a href="#">{{ data.tag }}</a></span
-                        >
+                        <span><a href="#">{{ data.tag }}</a></span>
                         <div></div>
                       </div>
                       <div class="text">
                         <p v-for="(text, t) in data.des" :key="t">
                           {{ text }}
                         </p>
+                        <div class="news_main_title">
+                        <span>{{ data.src }} <a href="https://ieeexplore.ieee.org/document/10428947">https://ieeexplore.ieee.org/document/10428947</a></span>
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -131,64 +132,15 @@
       return {
         newsData: [
           {
-            title: 'Building brands through customer service',
-            img: require('@/assets/img/news/1.jpg'),
-            tag: 'Branding',
+            title: 'My Research Paper of ICICyTA 2023 Have Been Successfully Publish to the IEEE Xplore Digital Library',
+            imgT: require('@/assets/img/news/news1.jpg'),
+            img: require('@/assets/img/news/news1-2.png'),
+            tag: 'Achievement',
             des: [
-              'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',
-              "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-              "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
-            ]
-          },
-          {
-            title: 'Unstoppable Jamstack and Gatsby opportunity',
-            img: require('@/assets/img/news/2.jpg'),
-            tag: 'Design',
-            des: [
-              'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',
-              "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-              "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
-            ]
-          },
-          {
-            title: 'Electron framework adds encryption API',
-            img: require('@/assets/img/news/3.jpg'),
-            tag: 'Media',
-            des: [
-              'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',
-              "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-              "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
-            ]
-          },
-          {
-            title: 'Sentry for JavaScript monitors release health',
-            img: require('@/assets/img/news/4.jpg'),
-            tag: 'Technology',
-            des: [
-              'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',
-              "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-              "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
-            ]
-          },
-          {
-            title: 'Five reasons to begin a Packt subscription',
-            img: require('@/assets/img/news/5.jpg'),
-            tag: 'Lifestyle',
-            des: [
-              'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',
-              "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-              "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
-            ]
-          },
-          {
-            title: 'Why developers are so divided over WordPress',
-            img: require('@/assets/img/news/6.jpg'),
-            tag: 'Modern',
-            des: [
-              'Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.',
-              "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-              "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
-            ]
+              'I presented my research paper titled "Design and Implementation of Cloud Computing-Based API for Mobile Application Tookar" at The 2023 3rd International Conference on Intelligent Cybernetics Technology & Applications (ICICyTA) held in Bali, Indonesia. The paper is indexed in Scopus and published in the IEEE Xplore digital library.',
+              "This research discusses the implementation of database API and machine learning API, specifically Image Classification, in an Android application using Google Cloud Platform, which effectively enhances the application's efficiency and performance. (16 February 2024)",
+            ],
+            src: 'My Research Publication:'
           }
         ]
       }

@@ -10,8 +10,8 @@
               <div class="left_inner">
                 <div class="author">
                   <div class="avatar_image">
-                    <img src="https://github.com/hibrizys/Hibrizy-Web/blob/main/src/assets/img/thumbs/1-1.jpg?raw=true" alt="" />
-                    <div class="main" data-img-url="https://github.com/hibrizys/personal-web/blob/main/src/assets/img/about/izy.jpg?raw=true"></div>
+                    <img :src="require('@/assets/img/thumbs/1-1.jpg')" alt="" />
+                    <div class="main" :data-img-url="require('@/assets/img/about/izy.jpg')"></div>
                   </div>
                   <div class="short">
                     <h3 class="name">
