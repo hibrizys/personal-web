@@ -52,8 +52,8 @@
                         <img :src="require('@/assets/img/thumbs/4-2.jpg')" alt="" />
                         <div
                           class="main"
-                          :data-img-url="require('@/assets/img/portfolio/Project1.png')"
-                          style="background-image: url('@/assets/img/portfolio/Project1.png')"
+                          :data-img-url="require('@/assets/img/portfolio/Project1-2.png')"
+                          style="background-image: url('@/assets/img/portfolio/Project1-2.png')"
                         ></div>
                       </div>
                       <div class="details">
@@ -67,21 +67,10 @@
                           It serves as a platform to share my passion, highlight my achievements, and connect with like-minded individuals in the tech community. 
                           Through this website, I aim to inspire others, contribute to open-source projects, and continue learning and growing.
                         </p>
+                        <p>Technology Stacks: Vuejs, Bootstrap</p>
                       </div>
                       <div class="additional_images">
                         <ul class="gallery_zoom">
-                          <li>
-                            <div class="list_inner">
-                              <div class="image">
-                                <img :src="require('@/assets/img/thumbs/4-2.jpg')" alt="" />
-                                <div class="main" :data-img-url="require('@/assets/img/portfolio/Project1-2.png')"></div>
-                                <a
-                                  class="hibrizy_tm_full_link zoom"
-                                  :href="require('@/assets/img/portfolio/Project1-2.png')"
-                                ></a>
-                              </div>
-                            </div>
-                          </li>
                           <li>
                             <div class="list_inner">
                               <div class="image">
@@ -102,6 +91,18 @@
                                 <a
                                   class="hibrizy_tm_full_link zoom"
                                   :href="require('@/assets/img/portfolio/Project1-4.png')"
+                                ></a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="list_inner">
+                              <div class="image">
+                                <img :src="require('@/assets/img/thumbs/4-2.jpg')" alt="" />
+                                <div class="main" :data-img-url="require('@/assets/img/portfolio/Project1-5.png')"></div>
+                                <a
+                                  class="hibrizy_tm_full_link zoom"
+                                  :href="require('@/assets/img/portfolio/Project1-5.png')"
                                 ></a>
                               </div>
                             </div>
@@ -148,7 +149,7 @@
                           enabling a more efficient and reliable software development lifecycle.
                         </p>
                         <p>
-                          My Repository: <a href="https://github.com/hibrizys/CICD_Nutanix" style="color:white">CICD_Nutanix</a>
+                          My CICD Repository: <a href="https://github.com/hibrizys/CICD_Nutanix" style="color:white">CICD_Nutanix</a>
                         </p>
                       </div>
                       <div class="additional_images">
