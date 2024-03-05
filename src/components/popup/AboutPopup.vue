@@ -290,7 +290,7 @@
           },
           education: [
             {
-              year: 'Aug 2020 - Mar 2024',
+              year: 'Aug 2020 - Feb 2024',
               unv: 'Telkom University',
               degree: 'Bachelor of Information Technology (3.87/4.00)'
             },            
